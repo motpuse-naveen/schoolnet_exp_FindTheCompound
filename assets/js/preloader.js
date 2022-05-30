@@ -12,15 +12,27 @@ var imgPreloadArray = new Array(
   "assets/images/watermark-2.png",
   "assets/images/Top_BG.png",
   "assets/images/Top_BG.svg",
+
   "assets/images/BlueVitriol.svg",
+  "assets/images/BlueVitriol_structure.svg",
   "assets/images/Chalk.svg",
+  "assets/images/Chalk_structure.svg",
   "assets/images/Fertilizer.svg",
+  "assets/images/Fertilizer_structure.svg",
   "assets/images/LeadOxide.svg",
+  "assets/images/LeadOxide_structure.svg",
   "assets/images/PotassiumDichromate.svg",
+  "assets/images/PotassiumDichromate_structure.svg",
   "assets/images/PotassiumPermanganate.svg",
+  "assets/images/PotassiumPermanganate_structure.svg",
   "assets/images/Salt.svg",
+  "assets/images/Salt_structure.svg",
   "assets/images/SulphuricAcid.svg",
+  "assets/images/SulphuricAcid_structure.svg",
   "assets/images/Water.svg",
+  "assets/images/Water_structure.svg",
+  "assets/images/HydrochloricAcid.svg",
+  "assets/images/HydrochloricAcid_structure.svg",
 );
 
 /*--Audio--*/
