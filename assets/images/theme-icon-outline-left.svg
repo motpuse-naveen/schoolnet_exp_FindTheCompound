@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.49 41">
+    <defs>
+        <style>.cls-1{fill:#fff;fill-opacity:0.8;}.cls-1,.cls-2{stroke:#6b717c;stroke-miterlimit:10;}.cls-2{fill:none;stroke-linecap:round;}</style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <rect class="cls-1" x="0.5" y="0.5" width="94.49" height="40" rx="20"/>
+            <path class="cls-2" d="M64.49,20.37a3.33,3.33,0,0,1-2.81,1.56"/>
+            <path class="cls-2" d="M66.75,19.52a3.52,3.52,0,0,1-1.11,3.13c-2.3,2.31-8.9,1-8.9,1a18,18,0,0,0,3.59-6.27c.44-1.21,1.8-1.47,3.12-1.16L67,19.74l3.21-3.21,8.15-9.09a1.93,1.93,0,0,0,.22-2.58A1.93,1.93,0,0,0,76,5.08l-9.08,8.15"/>
+            <line class="cls-2" x1="65.31" y1="14.85" x2="68.56" y2="18.09"/>
+            <line class="cls-2" x1="66.93" y1="13.23" x2="70.22" y2="16.53"/>
+            <polyline class="cls-2" points="72.49 18.5 72.49 31.5 53.49 31.5 53.49 9.5 65.49 9.5"/>
+        </g>
+    </g>
+</svg>

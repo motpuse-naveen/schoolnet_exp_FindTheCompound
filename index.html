@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Arrange the Cylinders in Descending Order by Temperature</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/plugins/bootstrap-5.1.3-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/fonts/font.css" />
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/landing-page.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/activity.css" />
+  <link rel="stylesheet" href="assets/lib/guide-tour/guide-tour.css" />
+  <link rel="stylesheet" href="assets/css/device.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="container-so launch">
+      <!--<img src="Landing_page_01-Desktop.png">-->
+      <!--<img src="assets/images/Pattern.svg">-->
+      <div class="exp_header">
+        <img class="logo" src="assets/images/logo.svg" alt="SCHOOLNET, Learning for life">
+      </div>
+      <div class="launch_pattern">
+        <div class="launch_pattern_img"></div>
+      </div>
+      <div class="launch_pattern_top">
+        <div class="launch_pattern_top_img"></div>
+        <img class="launch_expl_logo" src="assets/images/exploriment-Logo.svg" alt="Exploriments">
+      </div>
+      <div class="launch_expl_title_container">
+        <div class="launch_expl_title">
+          <div class="exploriment_title">
+            <h1 class="titledesktop">Arrange the Cylinders in Descending Order by Temperature</h1>
+            <h1 class="titlemobilelandscape">Arrange the Cylinders in Descending Order by Temperature</h1>
+            <!--<div class="subtitle">Experimental Verification of Time Period</div>-->
+          </div>
+          <div class="launch-btn-container">
+            <button id="btn_launch" class="btn btn_launch">Launch</button>
+          </div>
+        </div>
+      </div>
+      <div class="exp_footer">
+        <div class="launch_copyrighttext"><span>&copy; 2022, Schoolnet India Limited</span></div>
+      </div>
+    </div>
+    <div class="container-so main">
+      <div class="exp_header">
+        <div class="header">
+          <div class="container head-pan-container">
+            <div class="leftpan">
+              <!--<span class="title">Exploriments<sup>&reg;</sup></span>-->
+              <span class="title"><img class="activity-page-expl-logo" src="assets/images/exploriment-Logo.svg"></span>
+              <span class="sub-title"><i>by</i></span>
+              <img class="main-src-logo" src="assets/images/logo.svg">
+            </div>
+            <div class="rightpan">
+              <h1>
+                <span class="title">Arrange the Cylinders in Descending Order by Temperature</span>
+                <!--<span class="sub-title">Addition and Multiplication (Birds)</span>-->
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-theme-wrap">
+        <button id="btn_themes" class="btn btn_themes" title="Themes" data-bs-toggle="modal"
+          data-bs-target="#themeModalPopup" data-toggle="tooltip" data-placement="bottom">
+        </button>
+      </div>
+      <div class="exp_body">
+        <div class="exp_body_header"></div>
+        <div class="exp_body_content">
+          <div id="split-main" class="split ">
+            <div id="split-0">
+              <div class="contWraper zoom1">
+                <div class="content-container cc">
+                  <div class="activityText">
+                    <div class="otherdevice">
+                      <p>Arrange the cylinders given below in the descending order of temperature. To do so, you need to
+                        drag and drop the block in the right place.</p>
+                    </div>
+                    <!--<div class="mobiledevice less">
+                    <p>Arrange the cylinders given below in the descending order ...<a
+                        class="linkactivityTextMore">More</a></p>
+                  </div>
+                  <div class="mobiledevice more">
+                    <p>Arrange the cylinders given below in the descending order of temperature. To do so, you need to
+                      drag and drop the block in the right place. <a class="linkactivityTextLess">Less</a></p>
+                  </div>-->
+                  </div>
+                  <div class="cylinderWrapper">
+                    <div class="cylinderContainer">
+                      <div class="thermometerDragger">
+                        <div class="thermometer">
+                          <img class="thermo" src="assets/images/thermometer_without_no.svg" />
+                          <div class="thermoscale">
+                            <div class="thermored"></div>
+                            <div class="thermoredbottom"></div>
+                            <span class="number">100</span>
+                            <span class="number">90</span>
+                            <span class="number">80</span>
+                            <span class="number">70</span>
+                            <span class="number">60</span>
+                            <span class="number">50</span>
+                            <span class="number">40</span>
+                            <span class="number">30</span>
+                            <span class="number">20</span>
+                            <span class="number">10</span>
+                            <span class="number">00</span>
+                          </div>
+                          <div class="thermotext">
+                            <span class="thermotext_arrow"></span>
+                            <span class="thermotext_input"><span class="thermoreading">25</span>&deg;C</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="woodbase">
+                        <ul id="cylinder-list" class="cylinder-list">
+                        </ul>
+                        <div class="orderindicator">
+                          <table>
+                            <tr>
+                              <td class="td1">
+                                <div></div>
+                              </td>
+                              <td class="td2">Descending Order</td>
+                              <td class="td3">
+                                <div>
+                                  <div class="arrow"><img src="assets/images/arrow-right-40.svg" /></span></div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="markWrapper">
+                          <div class="wrong_mc">&#10006;</div>
+                          <div class="correct_mc">&#10004;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="split-1">
+              <div class="contWraper zoom2">
+                <div class="scratchPadContainer content-container sp">
+                  <textarea class="editableTextPad"></textarea>
+                  <img src="assets/images/edit.svg" class="editicon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup info popup_inst">
+            <div class="containerproc">
+              <div class="popuphead container">
+                <h2>Instructions</h2>
+                <div class="closepopup disnone">
+                  <button class="btn-close-popup" title="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.14" height="16.14">
+                      <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                          <g id="New_Symbol_10" data-name="New Symbol 10">
+                            <line class="cls-3" x1="15.14" y1="1" x2="1" y2="15.14" />
+                            <line class="cls-3" x1="15.14" y1="15.14" x2="1" y2="1" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="popupcontent">
+                <div class="procBox container">
+                  <span class="procstepno bold">1.</span>
+                  <!--<p class="bold">Speed v/s Velocity</p>-->
+                  <p>
+                    At the left, there are metal cylinders of various sizes. You have to arrange them in
+                    <b class="bold">descending</b> order of their TEMPERATURE.
+                  </p>
+                  <p>
+                    To find the temperature, drag and hold the thermometer over the cylinder.
+                  </p>
+                  <div class="instr-cylinder-container" style="text-align: center;">
+                    <img src="assets/images/screen1.png" style="width:100%;max-width: 230px;" />
+                  </div>
+                  <p></p>
+                  <p>
+                    To re-arrange the order of cylinders, just drag cylinder from it's current position and drop it in
+                    the desired position.
+                  </p>
+                  <p>Press the <b class="bold">Ok</b> button when you are finished.</p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">2.</span>
+                  <p>
+                    To help you, you are given two objects -
+                  </p>
+                  <h2 style="padding-top: 0px;">Thermometer</h2>
+                  <div style="text-align: center;" class="instr-thermometer-wrapper">
+                    <img src="assets/images/screen2.png" style="height:200px" />
+                  </div>
+                  <h2>A Scratch Pad</h2>
+                  <div style="text-align: center;" class="instr-scratchpad-wrapper">
+                    <img src="assets/images/scratchpad1.png" style="width:100%; border: 1px solid #333;max-width: 230px;" />
+                  </div>
+                  <p></p>
+                </div>
+                <hr />
+                <div class="procBox container">
+                  <span class="procstepno bold">3.</span>
+                  <p>Suppose you start with the Cylinder D. Drag and hold the thermometer over it, to measure
+                    temperature.</p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/screen3.png" style="width:100%;max-width: 230px;">
+                  </div>
+                  <p></p>
+                  <p>Now note its temperature (63 in case of this example)</p>
+                </div>
+                <hr />
+                <div class="procBox container">
+                  <span class="procstepno bold">4.</span>
+                  <p>You can use the scratch pad, to enter your reading, like this -</p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/scratchpad2.png" style="width: 100%;border:1px solid #333;max-width: 230px;">
+                  </div>
+                  <p></p>
+                  <p>To write on the Scratch Pad, set the cursor on the scratch pad, and begin typing.</p>
+                  <p>There is no perticular format to enter information on the Scratch Pad. Write in a way you will
+                    understand.</p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">5.</span>
+                  <div style="text-align: center;">
+                    <img src="assets/images/scratchpad2.png" style="width: 100%;border:1px solid #333;max-width: 230px;">
+                  </div>
+                  <p></p>
+                  <p>Remember, the scratch pad is just a convenience given to you. You need not use it at all if you so
+                    choose. Instead, you can use your memory to remember the temperature readings, or simply use a paper
+                    and pencil to record your observations.</p>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">6.</span>
+                  <p>After measuring the temperatures of all the cylinders, your Scratch Pad may look like this - </p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/scratchpad3.png" style="width: 100%;border:1px solid #333;max-width: 230px;">
+                  </div>
+                  <p></p>
+                  <p>Depending upon your readings, you may have to move a cylinder to another position, like this - </p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/Arrow_01_1.png" style="width: 130px;">
+                    <img src="assets/images/screen1.png" style="width:100%; max-width: 230px;" />
+                  </div>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">7.</span>
+                  <p>To change the position of the cylinder, you need to first drag it out from its existing position...
+                  </p>
+                  <div style="text-align: center;position: relative;">
+                    <img src="assets/images/Arrow_02.png" style="width: 62px;
+                    position: absolute;
+                    right: 28px;
+                    bottom: 18px;">
+                    <img src="assets/images/screen4.png" style="width:100%;max-width: 230px;" />
+                  </div>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">8.</span>
+                  <p>... and drop it at the desired position.</p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/screen5.png" style="width:100%;max-width: 230px;" />
+                  </div>
+                  <p></p>
+                  <p>This is how the re-arranged cylinders will look now - </p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/screen6.png" style="width:100%;max-width: 230px;" />
+                  </div>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">9.</span>
+                  <p>Using a series of such moves, and looking at the Scratch Pad, you need to re-arrange the cylinders
+                    in the descending order of temperature.</p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/scratchpad3.png" style="width: 100%;border:1px solid #333;max-width: 230px;">
+                  </div>
+                  <p></p>
+                  <p>The final answer, in case of this example, will look like this - </p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/screen7.png" style="width:100%;max-width: 230px;" />
+                  </div>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">10.</span>
+                  <p>&nbsp;</p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/screen8.png" style="width:228px;">
+                  </div>
+                  <p></p>
+                  <p>Press the <b class="bold">Ok</b> button, after you have finished.</p>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">11.</span>
+                  <p>Once you have pressed the <b>Ok</b> button your answer will be evaluated.</p>
+                  <p>You can either get it CORRECT</p>
+                  <div>
+                    <div class="correct" style="display: inline-block;">✔</div> 
+                  </div>
+                  <p>or get it WRONG</p>
+                  <div>
+                    <div class="wrong" style="display: inline-block;">✖</div>
+                  </div>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">12.</span>
+                  <p>If you get it CORRECT, the exercise is over, and you can start a new one by clicking the
+                    <b class="bold">Reset</b> button.
+                  </p>
+                  <div style="text-align: center;">
+                    <img src="assets/images/screen8.png" style="width:228px;">
+                  </div>
+                  <p></p>
+                  <p>If you get it WRONG, you can continue to move the cylinders around and re-submit using the
+                    <b class="bold">Ok</b> button.
+                  </p>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">13.</span>
+                  <p>At any time, you can click the <b class="bold">Answer</b> button. This will show you the basic
+                    movements that
+                    you have to do, to get the answer. </p>
+                    <div  style="text-align: center;">
+                      <img src="assets/images/screen8.png" style="width:228px;">
+                    </div>
+                    <p></p>
+                  <p>Showing the basic movements takes a bit of time. Once you have pressed the <b
+                      class="bold">Answer</b> button, a
+                    <b class="bold">Speed</b> button takes its place. Clicking it will show you the answer very fast.
+                  </p>
+                  <div  style="text-align: center;">
+                    <img src="assets/images/screen9.png" style="width:150px;">
+                  </div>
+                  <p></p>
+                </div>
+                <div class="procBox container">
+                  <span class="procstepno bold">14.</span>
+                  <p>At any time you can click the <b>Reset</b> button. This will start a new exercise for you.</p>
+                  <div  style="text-align: center;">
+                    <img src="assets/images/screen8.png" style="width:228px;">
+                  </div>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="exp_body_footer"></div> -->
+      </div>
+      <div class="exp_footer">
+        <div class="footer">
+          <div class="footer-menu-container left">
+            <div class="btn-wrap btn-wrap-info">
+              <button id="btn_info" class="btn btn_info" title="Instructions" data-toggle="tooltip">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="-5 -5 46 46">
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <ellipse class="cls-1" cx="17.5" cy="17.4" rx="17" ry="16.9" />
+                      <ellipse class="cls-1" cx="17.5" cy="17.4" rx="7.97" ry="7.92" />
+                      <line class="cls-1" x1="9.99" y1="21.13" x2="3.98" y2="27.11" />
+                      <line class="cls-1" x1="27.27" y1="3.96" x2="21.26" y2="9.93" />
+                      <line class="cls-1" x1="14.03" y1="24.59" x2="7.73" y2="30.84" />
+                      <line class="cls-1" x1="31.02" y1="7.69" x2="24.73" y2="13.94" />
+                      <line class="cls-1" x1="13.74" y1="9.93" x2="7.73" y2="3.96" />
+                      <line class="cls-1" x1="31.02" y1="27.11" x2="25.01" y2="21.13" />
+                      <line class="cls-1" x1="10.27" y1="13.94" x2="3.98" y2="7.69" />
+                      <line class="cls-1" x1="27.27" y1="30.84" x2="20.97" y2="24.59" />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="btn-wrap">
+              <button id="btn_ok" class="btn button_style btn_ok" title="Ok">
+                Ok
+              </button>
+              <button id="btn_answer" class="btn button_style btn_answer" title="Answer">
+                Answer
+              </button>
+              <button id="btn_speed" class="btn button_style btn_speed" title="Speed" style="display:none;">
+                Speed
+              </button>
+              <button id="btn_reset" class="btn button_style btn_reset" title="Reset">
+                Reset
+              </button>
+            </div>
+          </div>
+          <div class="copyrighttext"><span>&copy; 2022, Schoolnet India Limited</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme Modal Popup -->
+  <div class="modal fade themepopup" id="themeModalPopup" tabindex="-1" role="dialog"
+    aria-labelledby="themeModalPopupTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="themeModalPopupTitle">Themes</h2>
+          <div class="closepopup">
+            <button class="btn-close-theme-popup" data-bs-dismiss="modal" title="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16.14" height="16.14">
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <g id="New_Symbol_10" data-name="New Symbol 10">
+                      <line class="cls-3" x1="15.14" y1="1" x2="1" y2="15.14" />
+                      <line class="cls-3" x1="15.14" y1="15.14" x2="1" y2="1" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body custom-radios">
+          <div class="form-check theme-row">
+            <input class="form-check-input radioTheme" data-theme-id="green" type="radio" name="radioTheme"
+              id="radioThemeGreen" checked>
+            <label class="form-check-label" for="radioThemeGreen">
+              <span>
+                <img src="assets/images/check-icn.svg" alt="Checked Icon" />
+              </span>
+              Green
+              <div class="theme-green color-row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+              </div>
+            </label>
+          </div>
+          <div class="form-check theme-row">
+            <input class="form-check-input radioTheme" data-theme-id="purple" type="radio" name="radioTheme"
+              id="radioThemePurple" checked>
+            <label class="form-check-label" for="radioThemePurple">
+              <span>
+                <img src="assets/images/check-icn.svg" alt="Checked Icon" />
+              </span>
+              Purple
+              <div class="theme-purple color-row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+              </div>
+            </label>
+          </div>
+          <div class="form-check theme-row">
+            <input class="form-check-input radioTheme" data-theme-id="orange" type="radio" name="radioTheme"
+              id="radioThemeOrange" checked>
+            <label class="form-check-label" for="radioThemeOrange">
+              <span>
+                <img src="assets/images/check-icn.svg" alt="Checked Icon" />
+              </span>
+              Orange
+              <div class="theme-orange color-row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+              </div>
+            </label>
+          </div>
+          <div class="form-check theme-row">
+            <input class="form-check-input radioTheme" data-theme-id="maroon" type="radio" name="radioTheme"
+              id="radioThemeMaroon" checked>
+            <label class="form-check-label" for="radioThemeMaroon">
+              <span>
+                <img src="assets/images/check-icn.svg" alt="Checked Icon" />
+              </span>
+              Maroon
+              <div class="theme-maroon color-row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+              </div>
+            </label>
+          </div>
+          <div class="form-check theme-row">
+            <input class="form-check-input radioTheme" data-theme-id="blue" type="radio" name="radioTheme"
+              id="radioThemeBlue" checked>
+            <label class="form-check-label" for="radioThemeBlue">
+              <span>
+                <img src="assets/images/check-icn.svg" alt="Checked Icon" />
+              </span>
+              Blue
+              <div class="theme-blue color-row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+              </div>
+            </label>
+          </div>
+          <div class="form-check theme-row">
+            <input class="form-check-input radioTheme" data-theme-id="black" type="radio" name="radioTheme"
+              id="radioThemeBlack" checked>
+            <label class="form-check-label" for="radioThemeBlack">
+              <span>
+                <img src="assets/images/check-icn.svg" alt="Checked Icon" />
+              </span>
+              Black
+              <div class="theme-black color-row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Best Viewed Poup msg-->
+  <div class="modal fade" tabindex="-1" role="dialog" id="bestviewed_popup_msg">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="border: 0px;">
+        <div class="modal-body" style="text-align: center;">
+          <p><img src="assets/images/phone-portrait-pngrepo-com.png" width="100px"></p>
+          <p>This exploriment is best viewed in Portrait orientation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="preloader">
+    <div class="preloadpanel">
+      <div class="preloadingInstr">
+        <div class="progress"></div>
+        <div class="progress-text">
+          Loading... 100%
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Close Button SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" width="16.14" height="16.14">
+    <symbol id="closebutton" viewBox="0 0 16.14 16.14">
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+          <g id="New_Symbol_10" data-name="New Symbol 10">
+            <line class="cls-3" x1="15.14" y1="1" x2="1" y2="15.14" />
+            <line class="cls-3" x1="15.14" y1="15.14" x2="1" y2="1" />
+          </g>
+        </g>
+      </g>
+    </symbol>
+  </svg>
+
+  <script src="assets/plugins/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="assets/plugins/jquery-ui-1.13.0-1.custom/jquery-ui.min.js"></script>
+  <script src="assets/plugins/jquery-ui-touch/jquery.ui.touch.js"></script>
+  <script src="assets/plugins/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/plugins/highchart/highcharts.js"></script>
+  <script src="assets/js/preloader.js"></script>
+  <script src="assets/plugins/splitjs/split.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/hammer.min.js"></script>
+  <script type="text/javascript" src="assets/js/hammer-manager.js"></script>
+  <script src="assets/js/themes.js"></script>
+  <script src="assets/lib/guide-tour/guide-tour.js"></script>
+  <script src="assets/lib/guide-tour/guide-tour-data.js"></script>
+  <script src="assets/js/screen_splitter.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/activity.js"></script>
+  <!--<script type="text/javascript" src="assets/plugins/pinch-zoom.umd.min.js"></script>-->
+
+</body>
+
+</html>

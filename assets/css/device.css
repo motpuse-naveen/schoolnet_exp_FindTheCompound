@@ -1,0 +1,495 @@
+.launch .exp_body h1 {
+  font-size: 54px;
+}
+
+.launch .exp_body h1 .sub-title,
+.launch .exp_header .sub-title {
+  font-size: 18px;
+}
+
+.container-so.main .exp_header .header h1 .title {
+  font-size: 16px;
+}
+
+.container-so.main .exp_header .header h1 .sub-title {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.cust-popup.settings .popupcontent {
+  font-size: 11px;
+}
+
+.wrapper[device="desktop"] .settingsCol .col-lg-3.col-md-3.col-sm-12 {
+  width: auto;
+}
+
+#split-0,
+#split-1 {
+  overflow: auto;
+}
+
+#split-1 {
+  background-color: #f2f2f2;
+}
+
+.activityText {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+/*
+.activityText .otherdevice {
+  display: none;
+}
+
+.activityText .mobiledevice.less {
+  display: block;
+}
+
+.activityText .mobiledevice.more {
+  display: none;
+}
+*/
+.activityText p {
+  margin: 0px;
+}
+
+.scaleContainer {
+  width: 357px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 5rem;
+  /*max-width: 357px;*/
+}
+
+.scaleimg {
+  width: 100%;
+}
+
+.trail, .trailback {
+  width: 1px;
+  position: absolute;
+}
+
+.trail {
+  left: 24px;
+  top: -30px;
+}
+
+.trailImg {
+  width: 30px;
+  left: -15px;
+  position: absolute;
+  top: 11px;
+}
+
+.trailback {
+  left: 47px;
+  top: -30px;
+}
+
+.vline {
+  height: 30px;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  left: 0px;
+  bottom: -13px;
+}
+
+.vlinespan {
+  width: 28px;
+  height: 18px;
+  background-color: #679F37;
+  position: absolute;
+  left: -14px;
+  top: -20px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+}
+
+.graphContainer.leftmargin {
+  margin-left: auto;
+  margin-right: 1rem;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.graphContainer.rightmargin {
+  margin-left: 1rem;
+  margin-right: auto;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.rowGraphContainer {
+  transform: scale(0.69);
+  transform-origin: center top;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.exp_body_header {
+  display: none;
+}
+
+/**/
+
+@media only screen and (min-width: 321px) {
+  .container-so.main .exp_header .header h1 .sub-title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 530px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /*BOB Style*/
+
+  /*END BOB Style*/
+
+}
+
+@media only screen and (min-width: 560px) {
+  .col-sm-12 {
+    width: 50%;
+  }
+
+  .container-so.main .exp_header .header {
+    display: block;
+  }
+
+  .launch .copyrighttext {
+    font-size: 11px;
+    color: var(--theme-copy-text);
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    justify-content: right;
+    width: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  .container-so.main .exp_footer .footer .copyrighttext {
+    font-size: 11px;
+    color: var(--theme-copy-text);
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+    justify-content: right;
+    display: block;
+    width: 130px;
+    text-align: right;
+  }
+
+  .activityText .otherdevice {
+    display: block;
+  }
+
+  .activityText .mobiledevice.less {
+    display: none;
+  }
+
+  .scaleContainer {
+    width: 530px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .scaleimg {
+    width: 100%;
+  }
+
+  .trail, .trailback {
+    width: 1px;
+    position: absolute;
+  }
+
+  .trail {
+    left: 37px;
+    top: -30px;
+  }
+
+  .trailImg {
+    width: 46px;
+    left: -23px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .trailback {
+    left: 37px;
+    top: -30px;
+  }
+
+  .vline {
+    height: 30px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .vlinespan {
+    width: 34px;
+    height: 20px;
+    background-color: #679F37;
+    position: absolute;
+    left: -17px;
+    top: -44px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .graphContainer.leftmargin {
+    margin-left: auto;
+    margin-right: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .graphContainer.rightmargin {
+    margin-left: 1rem;
+    margin-right: auto;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .rowGraphContainer {
+    transform: scale(1);
+    transform-origin: center top;
+    height: auto;
+  }
+
+  .exp_body_header {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 731px) {
+  .container-so.main .exp_header .header {
+    display: block;
+  }
+
+  .launch .exp_footer .footer {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .launch .copyrighttext {
+    font-size: 11px;
+    color: var(--theme-copy-text);
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    justify-content: right;
+    width: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  .launch .exp_body .launch-bg {
+    padding-top: 58px;
+  }
+
+  .container-so.main .exp_footer .footer .copyrighttext {
+    display: block;
+    width: auto;
+  }
+
+  .btn-theme-wrap {
+    z-index: 11;
+  }
+
+  .wrapper[device="mobile"] #split-0,
+  .wrapper[device="mobile"] #split-1 {
+    height: 100% !important;
+    max-height: 100%;
+    float: left;
+    overflow: auto;
+  }
+
+  .col-sm-12 {
+    width: auto;
+  }
+
+  .activityText {
+    padding: 0.5em 1em;
+  }
+  .scaleContainer {
+    width: 655px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .scaleimg {
+    width: 100%;
+  }
+
+  .trail, .trailback {
+    width: 1px;
+    position: absolute;
+  }
+
+  .trail {
+    left: 47px;
+    top: -30px;
+  }
+
+  .trailImg {
+    width: 46px;
+    left: -23px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .trailback {
+    left: 47px;
+    top: -30px;
+  }
+
+  .vline {
+    height: 30px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .vlinespan {
+    width: 34px;
+    height: 20px;
+    background-color: #679F37;
+    position: absolute;
+    left: -17px;
+    top: -44px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  /*#split-0,
+  #split-1 {
+    min-height: 100px;
+    height: 100% !important;
+    max-height: 100%;
+    float: left;
+    overflow: auto;
+  }*/
+
+  .btn-theme-wrap {
+    z-index: 11;
+  }
+
+  .graphContainer.leftmargin {
+    margin: auto;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: 1rem;
+
+  }
+
+  .graphContainer.rightmargin {
+    margin: auto;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: auto;
+   
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .activity-page-expl-logo {
+    height: 72px;
+    padding: 10px 5px 10px 16px;
+    background: #000;
+  }
+  .container-so.main .exp_header .header .leftpan {
+    min-width: 380px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-device-height: 960px) {
+  /*BOB Style*/
+
+  /*END BOB Style*/
+  .wrapper[device="tablet"] .container-so.main .exp_header .header .head-pan-container {
+    font-size: 15px;
+  }
+
+  .wrapper[device="tablet"] .container-so.main .exp_header .header .main-src-logo {
+    /*width: 64px;*/
+    margin: 0em 0.5em;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-device-width: 660px) {
+  /*BOB Style*/
+
+  /*END BOB Style*/
+  .wrapper[device="tablet"] .container-so.main .exp_header .header .head-pan-container {
+    font-size: 15px;
+  }
+
+  .wrapper[device="tablet"] .container-so.main .exp_header .header .main-src-logo {
+    /*width: 64px;*/
+    margin: 0em 0.5em;
+  }
+
+  .birdsExplain {
+    font-size: 12px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-device-height: 890px) {
+  /*.rowGraphContainer {
+    transform: scale(0.8);
+    transform-origin: center top;
+    height: auto;
+  }*/
+  .graphWrapper{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-height: 610px) {
+  .launch .exp_header .title {
+    padding: 0.5em 0.5em 0.1em 0.5em !important;
+  }
+
+  .rowGraphContainer {
+    transform: scale(0.8);
+    transform-origin: center top;
+    height: auto;
+  }
+
+  .activityText {
+    padding: 0.5rem 1rem;
+  }
+
+  .graphWrapper {
+    max-height: 200px;
+  }
+  .graphContainer.leftmargin,
+  .graphContainer.rightmargin{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+  }
+}
