@@ -208,7 +208,7 @@ div.closestructurepopup {
         width: 100%;
     }
     .compoundWrapper {
-        max-width: 79%;
+        max-width: 300px;
     }
   }
 
