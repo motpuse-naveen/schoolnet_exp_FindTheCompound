@@ -36,7 +36,7 @@
 .activityText {
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
-/*
+
 .activityText .otherdevice {
   display: none;
 }
@@ -48,7 +48,7 @@
 .activityText .mobiledevice.more {
   display: none;
 }
-*/
+
 .activityText p {
   margin: 0px;
 }
