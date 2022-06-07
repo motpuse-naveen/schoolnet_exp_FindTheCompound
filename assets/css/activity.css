@@ -1,16 +1,18 @@
-.compoundContainer{
+.compoundContainer {
     width: 100%;
     display: block;
     float: left;
     padding-bottom: 10px;
 }
-.compoundWrapper{
+
+.compoundWrapper {
     width: 740px;
     display: block;
     margin: auto;
-    max-width: 90%;
+    max-width: 100%;
 }
-.compoundWrapper .compound{
+
+.compoundWrapper .compound {
     width: 134px;
     float: left;
     margin: 5px;
@@ -20,10 +22,12 @@
     cursor: pointer;
     position: relative;
 }
-.compoundWrapper .compound .viewstruct{
+
+.compoundWrapper .compound .viewstruct {
     text-align: center;
 }
-.compoundWrapper .compound .viewstruct button{
+
+.compoundWrapper .compound .viewstruct button {
     font-size: 12px;
     background: #FFF;
     border: none;
@@ -31,7 +35,8 @@
     color: #00579b;
     padding: 0px;
 }
-.compoundWrapper .compound .cmpimg{
+
+.compoundWrapper .compound .cmpimg {
     text-align: center;
     height: 80px;
     vertical-align: bottom;
@@ -40,10 +45,12 @@
     display: flex;
     justify-content: center;
 }
-.compoundWrapper .compound .cmpimg img{
+
+.compoundWrapper .compound .cmpimg img {
     max-width: 90px;
 }
-.compoundWrapper .compound .cmptitle{
+
+.compoundWrapper .compound .cmptitle {
     text-align: center;
     padding: 5px;
     height: 56px;
@@ -53,11 +60,12 @@
     justify-content: center;
     font-family: "Montserrat-Bold";
 }
-.compoundWrapper .compound .viewstruct .eye-icon{
+
+.compoundWrapper .compound .viewstruct .eye-icon {
     padding-left: 0.5em;
 }
 
-.formulaContainer{
+.formulaContainer {
     background-color: #F2F2F2;
     width: 100%;
     display: block;
@@ -65,19 +73,22 @@
     border-top: 1px solid var(--theme-popup-border);
     padding: 20px;
 }
-.formulaWrapper{
+
+.formulaWrapper {
     width: 468px;
     display: flow-root;
     margin: auto;
 }
-.formulaWrapper .formulaplaceholder{
+
+.formulaWrapper .formulaplaceholder {
     width: 82px;
     height: 38px;
     /*border: 1px solid #000;*/
     float: left;
     margin: 5px;
 }
-.formulaWrapper .formula{
+
+.formulaWrapper .formula {
     width: 80px;
     height: 36px;
     float: left;
@@ -88,76 +99,90 @@
     font-family: "Montserrat-Bold";
     text-align: center;
 }
-.drag-drop-wrap{
+
+.drag-drop-wrap {
     position: relative;
 }
-.structure-body{
+
+.structure-body {
     display: none;
     padding: 1rem;
     background-color: black;
     border-radius: 5px;
 }
-.struct-main{
+
+.struct-main {
     height: 200px;
     display: flex;
 }
-.struct-main img{
+
+.struct-main img {
     max-height: 100%;
     margin: auto;
     display: block;
 }
-.msimg{
+
+.msimg {
     padding-right: 5px;
 }
-.msimg svg{
+
+.msimg svg {
     margin-top: -8px;
 }
-.mstext{
 
-}
-.modal.structurepopup .modal-content{
+.mstext {}
+
+.modal.structurepopup .modal-content {
     background-color: var(--theme-sec-background);
 }
+
 .modal.structurepopup .modal-header h2.modal-title {
-  color: var(--theme-pri-color);
-  font-family: "Montserrat-Bold";
-  font-size: 16px;
-  margin: 0;
+    color: var(--theme-pri-color);
+    font-family: "Montserrat-Bold";
+    font-size: 16px;
+    margin: 0;
 }
-.modal.structurepopup .modal-header{
+
+.modal.structurepopup .modal-header {
     padding: 1rem 1rem 0.5rem 1rem;
 }
-img.microscope{
+
+img.microscope {
     width: 30px;
     margin-top: -8px;
     margin-right: 10px;
 }
+
 div.closestructurepopup {
     position: absolute;
     right: 20px;
     top: 24px;
     margin-top: -5px;
-  }
-  .btn-close-structure-popup {
+}
+
+.btn-close-structure-popup {
     border-style: none;
     background-color: transparent;
-  }
-  .struct-legend table{
-      float: right;
-  }
-  .struct-legend table td{
-      padding: 2px 10px;
-      color: yellow;
-  }
+}
 
-  svg .cls-ms-1{
-    fill:var(--theme-pri-color);
-    stroke:"none";
-  }
-  .wrong_mc {
+.struct-legend table {
+    float: right;
+}
+
+.struct-legend table td {
+    padding: 2px 10px;
+    color: yellow;
+}
+
+svg .cls-ms-1 {
+    fill: var(--theme-pri-color);
+    stroke: "none";
+}
+
+.wrong_mc {
     position: absolute;
     /*top: 36%;*/
-    top:20px;
+    top: 20px;
     right: 36%;
     color: #fff;
     background-color: #bc0000;
@@ -169,12 +194,12 @@ div.closestructurepopup {
     font-size: 23px;
     float: left;
     /*display: none;*/
-  }
-  
-  .correct_mc {
+}
+
+.correct_mc {
     position: absolute;
     /*top: 36%;*/
-    top:20px;
+    top: 20px;
     right: 36%;
     color: #fff;
     background-color: #00bf3a;
@@ -185,30 +210,67 @@ div.closestructurepopup {
     font-size: 23px;
     float: left;
     /*display: none;*/
-  }
-  @media only screen and (max-width: 490px) {
-    body{
+}
+
+.gutter.gutter-vertical {
+    display: none;
+}
+
+#split-0 {
+    min-height: 500px;
+}
+
+#split-1 {
+    min-height: 135px;
+}
+@media only screen and (max-width: 730px) {
+    #split-0 {
+        min-height: 710px;
+    }
+    #split-1 {
+        min-height: 135px;
+        max-height: 135px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    body {
         font-size: 14px;
     }
-    .formulaContainer{
+
+    .formulaContainer {
         padding: 8px;
     }
-    .formulaWrapper .formula{
+
+    .formulaWrapper .formula {
         font-size: 12px;
     }
+
     .formulaWrapper .formulaplaceholder {
         width: 60px;
         height: 30px;
     }
+
     .formulaWrapper .formula {
         width: 60px;
         height: 30px;
     }
-    .formulaWrapper{
-        width: 100%;
+
+    .formulaWrapper {
+        /*width: 100%;*/
+        width: 356px;
     }
+
     .compoundWrapper {
         max-width: 300px;
     }
-  }
 
+    #split-0 {
+        min-height: 915px !important;
+    }
+
+    #split-1 {
+        min-height: 100px !important;
+        max-height: 100px;
+    }
+}

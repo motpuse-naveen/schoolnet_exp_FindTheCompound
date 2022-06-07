@@ -85,7 +85,7 @@ var ScreenSplitter = (function () {
             $(".gutter").append(horizontalHandle)
         },
         VerticalSplit: function (p_sizes) {
-            var loc_sizes = [70, 30]
+            var loc_sizes = [78, 22]
             if(p_sizes!=null && p_sizes!=undefined && p_sizes.length>1){
                 loc_sizes = p_sizes;
             }
@@ -93,6 +93,7 @@ var ScreenSplitter = (function () {
             $("#split-0").removeAttr("style");
             $("#split-1").removeAttr("style");
             split_instance = Split(['#split-0', '#split-1'], {
+                minSize: 100,
                 sizes: loc_sizes,
                 direction: 'vertical',
                 gutterSize: 1,

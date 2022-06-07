@@ -24,10 +24,7 @@
   width: auto;
 }
 
-#split-0,
-#split-1 {
-  overflow: auto;
-}
+
 
 #split-1 {
   background-color: #f2f2f2;
@@ -311,13 +308,13 @@
     z-index: 11;
   }
 
-  .wrapper[device="mobile"] #split-0,
+  /*.wrapper[device="mobile"] #split-0,
   .wrapper[device="mobile"] #split-1 {
     height: 100% !important;
     max-height: 100%;
     float: left;
     overflow: auto;
-  }
+  }*/
 
   .col-sm-12 {
     width: auto;

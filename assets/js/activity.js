@@ -14,10 +14,10 @@ var ActivityMain = (function () {
             $(".compound .correct_mc").remove();
         },
         OnOrientationChange: function () {
-            $(".compound[dropped-cmp]").each(function(){
+            $(".compound[dropped-cmp]").each(function () {
                 var droppedItem = $(this).attr("dropped-cmp");
-                var gradItem = $(".formula[compound='"+droppedItem+"']");
-                ActivityMain.ResetDroppedPosition($(this),gradItem) 
+                var gradItem = $(".formula[compound='" + droppedItem + "']");
+                ActivityMain.ResetDroppedPosition($(this), gradItem)
             });
         },
         BindDraggables: function () {
@@ -54,11 +54,15 @@ var ActivityMain = (function () {
                 accept: ".formula",
                 tolerance: "pointer",
                 drop: function (event, ui) {
-                    ActivityMain.ResetDroppedPosition($(event.target),  ui.draggable);
-                    var dropcmp = ui.draggable.attr("compound");
-                    $(".compound[dropped-cmp='" + dropcmp + "']").removeAttr("dropped-cmp")
-                    event.target.setAttribute("dropped-cmp", dropcmp);
-
+                    if (!$(event.target).attr("dropped-cmp")) {
+                        ActivityMain.ResetDroppedPosition($(event.target), ui.draggable);
+                        var dropcmp = ui.draggable.attr("compound");
+                        $(".compound[dropped-cmp='" + dropcmp + "']").removeAttr("dropped-cmp")
+                        event.target.setAttribute("dropped-cmp", dropcmp);
+                    }
+                    else{
+                        ui.draggable.css({ "left": 0, "top": 0 });
+                    }
                 },
                 out: function (event, ui) { }
             });
@@ -81,11 +85,11 @@ var ActivityMain = (function () {
         SubmitActivity: function () {
             $(".compound .wrong_mc").remove();
             $(".compound .correct_mc").remove();
-            $(".compound").each(function(){
-                if($(this).attr("compound") == $(this).attr("dropped-cmp")){
+            $(".compound").each(function () {
+                if ($(this).attr("compound") == $(this).attr("dropped-cmp")) {
                     $(this).append('<div class="correct_mc">&#10004;</div>');
                 }
-                else{
+                else {
                     $(this).append('<div class="wrong_mc">&#10006;</div>');
                 }
             })
@@ -93,7 +97,7 @@ var ActivityMain = (function () {
         AnswerActivity: function () {
 
         },
-        ResetDroppedPosition: function(_drpppable, _draggable){
+        ResetDroppedPosition: function (_drpppable, _draggable) {
             var drpLeft = _drpppable[0].offsetLeft;
             var drpTop = _drpppable[0].offsetTop;
             var drpHt = _drpppable[0].offsetHeight;
@@ -114,9 +118,11 @@ $(document).on("click", "#btn_reset", function (event) {
     $(".contWraper").removeAttr("pz-scale")
     //debugger;
     ActivityMain.ResetActivity();
+    $("#btn_ok").show();
 });
 $(document).on("click", "#btn_ok", function (event) {
     ActivityMain.SubmitActivity();
+    $("#btn_ok").hide();
 });
 $(document).on("click", ".compound", function (event) {
     var compound = $(this).attr("compound");

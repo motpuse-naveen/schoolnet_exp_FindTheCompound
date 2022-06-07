@@ -39,14 +39,14 @@ var ActivityShell = (function () {
       $(".container-so.launch").fadeOut();
       $(".container-so.main").show();
       this.AdjustContainerHeight();
-      //ScreenSplitter.InitSplitter();
-      //GuidedTour.Init();
+      ScreenSplitter.InitSplitter();
+      GuidedTour.Init();
       ActivityMain.LaunchActivity();
       /* Scale Spring to fit */
       //ScreenSplitter.ScaleToFit($("#split-0"));
       /* Scale Graph to fit */
       //ScreenSplitter.ScaleToFit($("#split-1"));
-      /*
+      
       if (zoom1 == null) {
         hammerItScrollableContent(document.querySelector(".zoom1"));
         zoom1 = "zoom1";
@@ -55,7 +55,7 @@ var ActivityShell = (function () {
         hammerItScrollableContent(document.querySelector(".zoom2"));
         zoom2 = "zoom2";
       }
-      */
+      
     },
     AdjustContainerHeight: function () {
       var deviceType = ActivityShell.DeviceType();
@@ -167,7 +167,7 @@ var ActivityShell = (function () {
 
     OnOrientationChange: function () {
       this.AdjustContainerHeight();
-      //ScreenSplitter.InitSplitter();
+      ScreenSplitter.InitSplitter();
       if ($(".popup").is(":visible")) {
         this.AdjustSplitPanelsOnOpenPopup($(".popup:visible"));
       }

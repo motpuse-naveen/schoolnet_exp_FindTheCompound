@@ -156,6 +156,7 @@
   .gt-clone {
     background-color: var(--theme-pri-color);
     pointer-events: none;
+    margin: 0;
   }
   .btn_themes.gt-clone {
     background-color:transparent;

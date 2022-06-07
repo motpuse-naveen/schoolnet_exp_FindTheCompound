@@ -1,7 +1,11 @@
 const g_tour_steps = [
     {
-        sourceElmIdQS: "#btn_info",
-        informationText: "Instructions - Describes the different steps of experiment.",
+        sourceElmIdQS: "#btn_ok",
+        informationText: `Ok - Evaluate the correct chemical formula for each of the given compound.`,
+    },
+    {
+        sourceElmIdQS: "#btn_reset",
+        informationText: `Reset - Reset the exercise by randomizing the given compound.`,
     },
     {
         sourceElmIdQS: "#btn_themes",
