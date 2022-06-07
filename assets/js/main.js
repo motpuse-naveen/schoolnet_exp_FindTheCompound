@@ -52,7 +52,7 @@ var ActivityShell = (function () {
         zoom1 = "zoom1";
       }
       if (zoom2 == null) {
-        hammerItScrollableContent(document.querySelector(".zoom2"));
+        //hammerItScrollableContent(document.querySelector(".zoom2"));
         zoom2 = "zoom2";
       }
       

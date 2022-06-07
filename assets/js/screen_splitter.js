@@ -184,6 +184,7 @@ var ScreenSplitter = (function () {
             ScreenSplitter.ScaleToFit($("#split-1"));
         },
         ResetSplitOnPinchZoom: function(){
+            /*
             var attr_sizes = []
             var splitPanel1Size = $("#split-0").attr("size");
             var splitPanel2Size = $("#split-1").attr("size");
@@ -198,6 +199,7 @@ var ScreenSplitter = (function () {
             else{
                 this.InitSplitter();
             }
+            */
         }
     }
 })();
