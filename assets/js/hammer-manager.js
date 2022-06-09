@@ -38,7 +38,8 @@ function hammerIt(elm, p_maxScale) {
             } catch (err) { }
             el.style.webkitTransform = transform;
             transform = "";
-        }*/
+        }
+        */
 
         //pan
         if (scale != 1) {

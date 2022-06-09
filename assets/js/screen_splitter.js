@@ -58,6 +58,17 @@ var ScreenSplitter = (function () {
             //sprcontht = $(".content-container.sp").height();
             //$(".content-container.sp").css({"height":sprcontht + "px"})
         },
+        AutoSplit: function(){
+            $("#split-0").removeAttr("style")
+            var btmSplitHt = $("#split-1").height();
+            var availHt = $(".exp_body_content").height();
+            var remHt = availHt - btmSplitHt;
+
+            var topSplitHt = $("#split-0").height();
+            if(remHt>topSplitHt){
+                $("#split-0").css({"height": remHt-2})
+            }
+        },
         HorizontalSplit: function (p_sizes) {
             var loc_sizes = [48, 52]
             if(p_sizes!=null && p_sizes!=undefined && p_sizes.length>1){
@@ -85,7 +96,7 @@ var ScreenSplitter = (function () {
             $(".gutter").append(horizontalHandle)
         },
         VerticalSplit: function (p_sizes) {
-            var loc_sizes = [78, 22]
+            var loc_sizes = [75, 25]
             if(p_sizes!=null && p_sizes!=undefined && p_sizes.length>1){
                 loc_sizes = p_sizes;
             }
@@ -94,7 +105,7 @@ var ScreenSplitter = (function () {
             $("#split-1").removeAttr("style");
             split_instance = Split(['#split-0', '#split-1'], {
                 minSize: 100,
-                sizes: loc_sizes,
+                //sizes: loc_sizes,
                 direction: 'vertical',
                 gutterSize: 1,
                 onDrag: function (sizes) {

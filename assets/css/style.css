@@ -38,6 +38,7 @@
   text-align: center;
   justify-content: center;
   outline: 1px solid var(--theme-popup-border);
+  height: 48px;
 }
 
 
@@ -407,7 +408,7 @@ div.closepopup {
 }
 .procBox {
   position: relative;
-  padding-left: 40px;
+  padding-left: 10px;
   float: left;
 }
 .procstepno {
@@ -566,8 +567,11 @@ svg .cls-101{fill:none;stroke:var(--theme-pri-text-color);stroke-linecap:round;s
   overflow: auto;
 }
 #split-main{
-  overflow:auto;
+  overflow:visible;
 }
 .zoom1, .zoom2{
   transform-origin: left top;
+}
+.autocontent{
+  height: 100%;
 }

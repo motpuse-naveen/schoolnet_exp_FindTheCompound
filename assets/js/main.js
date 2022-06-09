@@ -1,4 +1,4 @@
-const POPUP_WIDTH = 280;
+const POPUP_WIDTH = 250;
 var zoom1 = null;
 var zoom2 = null;
 var zoom3 = null;
@@ -39,7 +39,10 @@ var ActivityShell = (function () {
       $(".container-so.launch").fadeOut();
       $(".container-so.main").show();
       this.AdjustContainerHeight();
-      ScreenSplitter.InitSplitter();
+      //ScreenSplitter.InitSplitter();
+      //Should always call after AdjustContainerHeight
+      ScreenSplitter.AutoSplit();
+      
       GuidedTour.Init();
       ActivityMain.LaunchActivity();
       /* Scale Spring to fit */
@@ -153,6 +156,7 @@ var ActivityShell = (function () {
         $popup.fadeIn();
         $button.addClass("active")
         ActivityShell.AdjustSplitPanelsOnOpenPopup($popup)
+        
       }
       else {
         $popup.hide();
@@ -163,11 +167,13 @@ var ActivityShell = (function () {
       //ScreenSplitter.ScaleToFit($("#split-0"));
       /* Scale Graph to fit */
       //ScreenSplitter.ScaleToFit($("#split-1"));
+      ActivityMain.ResetPositions();
     },
 
     OnOrientationChange: function () {
       this.AdjustContainerHeight();
-      ScreenSplitter.InitSplitter();
+      //ScreenSplitter.InitSplitter();
+      ScreenSplitter.AutoSplit();
       if ($(".popup").is(":visible")) {
         this.AdjustSplitPanelsOnOpenPopup($(".popup:visible"));
       }
@@ -205,6 +211,7 @@ var ActivityShell = (function () {
       if (deviceType == "desktop") {
         this.AdjustContainerHeight();
         //ScreenSplitter.InitSplitter(null, true);
+        ScreenSplitter.AutoSplit();
         if ($(".popup").is(":visible")) {
           this.AdjustSplitPanelsOnOpenPopup($(".popup:visible"));
         }

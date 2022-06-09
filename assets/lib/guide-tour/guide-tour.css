@@ -165,4 +165,7 @@
   .gutter_handle.gt-clone{
     background-color:transparent;
   }
+  .btn_info.gt-clone{
+    margin: 1px;
+  }
   /*End Cust Css*/

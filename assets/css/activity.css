@@ -70,7 +70,7 @@
     width: 100%;
     display: block;
     float: left;
-    border-top: 1px solid var(--theme-popup-border);
+    /*border-top: 1px solid var(--theme-popup-border);*/
     padding: 20px;
 }
 
@@ -167,6 +167,7 @@ div.closestructurepopup {
 
 .struct-legend table {
     float: right;
+    margin-top: 20px;
 }
 
 .struct-legend table td {
@@ -217,19 +218,24 @@ svg .cls-ms-1 {
 }
 
 #split-0 {
-    min-height: 500px;
+    /*min-height: 500px;*/
 }
 
 #split-1 {
     min-height: 135px;
+    border-top: 1px solid var(--theme-popup-border);
+}
+#split-0, #split-1 {
+    float: left;
+    width: 100%;
 }
 @media only screen and (max-width: 730px) {
     #split-0 {
-        min-height: 710px;
+        /*min-height: 710px;*/
     }
     #split-1 {
-        min-height: 135px;
-        max-height: 135px;
+        /*min-height: 135px;
+        max-height: 135px;*/
     }
 }
 
@@ -266,11 +272,11 @@ svg .cls-ms-1 {
     }
 
     #split-0 {
-        min-height: 915px !important;
+        /*min-height: 915px !important;*/
     }
 
     #split-1 {
-        min-height: 100px !important;
-        max-height: 100px;
+        /*min-height: 100px !important;
+        max-height: 100px;*/
     }
 }

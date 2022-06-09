@@ -14,6 +14,9 @@ var ActivityMain = (function () {
             $(".compound .correct_mc").remove();
         },
         OnOrientationChange: function () {
+            this.ResetPositions();
+        },
+        ResetPositions: function(){
             $(".compound[dropped-cmp]").each(function () {
                 var droppedItem = $(this).attr("dropped-cmp");
                 var gradItem = $(".formula[compound='" + droppedItem + "']");
@@ -30,15 +33,29 @@ var ActivityMain = (function () {
                         top: 0,
                         left: 0
                     };
-                    /*
                     if (!event) {
-                        ActivityMain.InitReadingCounter(Number($(".thermoreading").text()), 25, Number($(".thermoreading").text()));
-                    }*/
+                        var cmpnd = $(this).attr("compound");
+                        $(".compound.ui-droppable[dropped-cmp='" + cmpnd + "']").removeAttr("dropped-cmp")
+                    }
                     return !event;
                 },
                 start: function (event, ui) {
-                    $(".contWraper").removeAttr("style");
-                    $(".contWraper").removeAttr("pz-scale")
+                    $(".zoom1").removeAttr("style");
+                    $(".zoom1").removeAttr("pz-scale")
+                    var cmpnd = $(this).attr("compound");
+                    $(".compound.ui-droppable[dropped-cmp='" + cmpnd + "']").removeAttr("dropped-cmp")
+                },
+                drag: function (event, ui) {
+                    var scaleval = $(".zoom1").attr("pz-scale")
+                    if (scaleval != undefined && scaleval != "") {
+                        scaleval = Number(scaleval);
+                    }
+                    else {
+                        scaleval = 1;
+                    }
+                    ui.position.top = ui.position.top / scaleval;
+                    ui.position.left = ui.position.left / scaleval;
+                    
                 }
             }).each(function () {
                 /*var top = $(this).position().top;
@@ -54,13 +71,14 @@ var ActivityMain = (function () {
                 accept: ".formula",
                 tolerance: "pointer",
                 drop: function (event, ui) {
+                    var dropcmp = ui.draggable.attr("compound");
+                    //var droppedcmp = $(event.target).attr("dropped-cmp")
                     if (!$(event.target).attr("dropped-cmp")) {
                         ActivityMain.ResetDroppedPosition($(event.target), ui.draggable);
-                        var dropcmp = ui.draggable.attr("compound");
                         $(".compound[dropped-cmp='" + dropcmp + "']").removeAttr("dropped-cmp")
                         event.target.setAttribute("dropped-cmp", dropcmp);
                     }
-                    else{
+                    else {
                         ui.draggable.css({ "left": 0, "top": 0 });
                     }
                 },
@@ -114,8 +132,10 @@ var ActivityMain = (function () {
 })();
 
 $(document).on("click", "#btn_reset", function (event) {
-    $(".contWraper").removeAttr("style");
-    $(".contWraper").removeAttr("pz-scale")
+    //$(".contWraper").removeAttr("style");
+    //$(".contWraper").removeAttr("pz-scale")
+    $(".zoom1").removeAttr("style");
+    $(".zoom1").removeAttr("pz-scale")
     //debugger;
     ActivityMain.ResetActivity();
     $("#btn_ok").show();
