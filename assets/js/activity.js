@@ -12,6 +12,7 @@ var ActivityMain = (function () {
             $(".compound[dropped-cmp]").removeAttr("dropped-cmp")
             $(".compound .wrong_mc").remove();
             $(".compound .correct_mc").remove();
+            $(".formula").draggable("enable");
         },
         OnOrientationChange: function () {
             this.ResetPositions();
@@ -26,7 +27,8 @@ var ActivityMain = (function () {
         BindDraggables: function () {
             //Bind Draggable
             $(".formula").draggable({
-                container: "#drag-drop-wrap",
+                containment:"#split-main",
+                container: "#split-main",
                 //revert: "invalid",
                 revert: function (event, ui) {
                     $(this).data("uiDraggable").originalPosition = {
@@ -55,7 +57,6 @@ var ActivityMain = (function () {
                     }
                     ui.position.top = ui.position.top / scaleval;
                     ui.position.left = ui.position.left / scaleval;
-                    
                 }
             }).each(function () {
                 /*var top = $(this).position().top;
@@ -111,6 +112,8 @@ var ActivityMain = (function () {
                     $(this).append('<div class="wrong_mc">&#10006;</div>');
                 }
             })
+
+            $(".formula").draggable("disable");
         },
         AnswerActivity: function () {
 
@@ -143,6 +146,7 @@ $(document).on("click", "#btn_reset", function (event) {
 $(document).on("click", "#btn_ok", function (event) {
     ActivityMain.SubmitActivity();
     $("#btn_ok").hide();
+
 });
 $(document).on("click", ".compound", function (event) {
     var compound = $(this).attr("compound");

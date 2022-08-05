@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124.9" height="51.81" viewBox="0 0 124.9 51.81"><defs><style>.cls-1{fill:url(#radial-gradient);}</style><radialGradient id="radial-gradient" cx="63.83" cy="-7.33" r="63.29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#198bd8"/><stop offset="0.29" stop-color="#1888d5"/><stop offset="0.53" stop-color="#1480cb"/><stop offset="0.75" stop-color="#0d71ba"/><stop offset="0.95" stop-color="#035da2"/><stop offset="1" stop-color="#00579b"/></radialGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="Desktop"><g id="page_02"><g id="Graphics"><path class="cls-1" d="M0,39.81c11.28,7,35.33,12,62.44,12s51.2-5,62.46-12a22.42,22.42,0,0,0-7.29-8c-2.75-2-5.44-4.33-8.53-5.75-3.92-1.79-8.06-3.16-11.79-5.26-4.12-2.32-7.64-5.64-11.8-8S77,7.6,72.72,5.05C69,2.81,65.75-1.52,61,.54c-2.22,1-4,2.92-6,4.22-2.24,1.44-4.73,2.43-7,3.8-5.11,3.09-8.89,8.15-14.1,11a183.23,183.23,0,0,0-16,10.15c-4,2.8-10.63,4.91-14.89,7.85C2.1,38.18,1.06,39,0,39.81Z"/></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="124.9" height="51.81" viewBox="0 0 124.9 51.81">
+    <defs>
+        <style>.cls-1{fill:url(#radial-gradient);}</style>
+        <radialGradient id="radial-gradient" cx="63.83" cy="-7.33" r="63.29" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#198bd8"/>
+            <stop offset="0.29" stop-color="#1888d5"/>
+            <stop offset="0.53" stop-color="#1480cb"/>
+            <stop offset="0.75" stop-color="#0d71ba"/>
+            <stop offset="0.95" stop-color="#035da2"/>
+            <stop offset="1" stop-color="#00579b"/>
+        </radialGradient>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Desktop">
+            <g id="page_02">
+                <g id="Graphics">
+                    <path class="cls-1" d="M0,39.81c11.28,7,35.33,12,62.44,12s51.2-5,62.46-12a22.42,22.42,0,0,0-7.29-8c-2.75-2-5.44-4.33-8.53-5.75-3.92-1.79-8.06-3.16-11.79-5.26-4.12-2.32-7.64-5.64-11.8-8S77,7.6,72.72,5.05C69,2.81,65.75-1.52,61,.54c-2.22,1-4,2.92-6,4.22-2.24,1.44-4.73,2.43-7,3.8-5.11,3.09-8.89,8.15-14.1,11a183.23,183.23,0,0,0-16,10.15c-4,2.8-10.63,4.91-14.89,7.85C2.1,38.18,1.06,39,0,39.81Z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,1 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 154.25 129.33"><defs><style>.cls-1{fill:none;stroke:#fbfe06;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}.cls-2{fill:url(#radial-gradient);}.cls-3{fill:url(#radial-gradient-2);}.cls-4{font-size:16px;font-family:Montserrat-Bold, Montserrat;font-weight:700;}.cls-5{fill:url(#radial-gradient-3);}</style><radialGradient id="radial-gradient" cx="10.98" cy="10.01" r="23.66" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="0.05" stop-color="#e1ebf3"/><stop offset="0.15" stop-color="#adc9df"/><stop offset="0.26" stop-color="#7eaacd"/><stop offset="0.37" stop-color="#5891bd"/><stop offset="0.48" stop-color="#387cb1"/><stop offset="0.6" stop-color="#1f6ca7"/><stop offset="0.72" stop-color="#0e60a0"/><stop offset="0.85" stop-color="#03599c"/><stop offset="1" stop-color="#00579b"/></radialGradient><radialGradient id="radial-gradient-2" cx="111.56" cy="53.82" r="54.55" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="0.07" stop-color="#ecd7eb"/><stop offset="0.16" stop-color="#d4a5d2"/><stop offset="0.26" stop-color="#be79bb"/><stop offset="0.37" stop-color="#ac54a8"/><stop offset="0.47" stop-color="#9e3599"/><stop offset="0.58" stop-color="#921e8d"/><stop offset="0.7" stop-color="#8a0d85"/><stop offset="0.83" stop-color="#860380"/><stop offset="1" stop-color="#84007e"/></radialGradient><radialGradient id="radial-gradient-3" cx="10.98" cy="109.84" r="23.66" xlink:href="#radial-gradient"/></defs><g id="Layer_2" data-name="Layer 2"><g id="portrait"><g id="Water"><line class="cls-1" x1="84.25" y1="51.31" x2="24.72" y2="19.6"/><line class="cls-1" x1="24.72" y1="109.58" x2="84.25" y2="77.87"/><circle class="cls-2" cx="14.75" cy="14.75" r="14.75"/><circle class="cls-3" cx="120.25" cy="64.75" r="34"/><g id="Submit"><text class="cls-4" transform="translate(111.98 69.42)">O</text></g><g id="Submit-2" data-name="Submit"><text class="cls-4" transform="translate(8.29 19.42)">H</text></g><circle class="cls-5" cx="14.75" cy="114.58" r="14.75"/><g id="Submit-3" data-name="Submit"><text class="cls-4" transform="translate(8.29 119.25)">H</text></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 154.25 129.33">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#fbfe06;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}.cls-2{fill:url(#radial-gradient);}.cls-3{fill:url(#radial-gradient-2);}.cls-4{font-size:16px;font-family:Montserrat-Bold, Montserrat;font-weight:700;}.cls-5{fill:url(#radial-gradient-3);}</style>
+        <radialGradient id="radial-gradient" cx="10.98" cy="10.01" r="23.66" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="0.05" stop-color="#e1ebf3"/>
+            <stop offset="0.15" stop-color="#adc9df"/>
+            <stop offset="0.26" stop-color="#7eaacd"/>
+            <stop offset="0.37" stop-color="#5891bd"/>
+            <stop offset="0.48" stop-color="#387cb1"/>
+            <stop offset="0.6" stop-color="#1f6ca7"/>
+            <stop offset="0.72" stop-color="#0e60a0"/>
+            <stop offset="0.85" stop-color="#03599c"/>
+            <stop offset="1" stop-color="#00579b"/>
+        </radialGradient>
+        <radialGradient id="radial-gradient-2" cx="111.56" cy="53.82" r="54.55" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="0.07" stop-color="#ecd7eb"/>
+            <stop offset="0.16" stop-color="#d4a5d2"/>
+            <stop offset="0.26" stop-color="#be79bb"/>
+            <stop offset="0.37" stop-color="#ac54a8"/>
+            <stop offset="0.47" stop-color="#9e3599"/>
+            <stop offset="0.58" stop-color="#921e8d"/>
+            <stop offset="0.7" stop-color="#8a0d85"/>
+            <stop offset="0.83" stop-color="#860380"/>
+            <stop offset="1" stop-color="#84007e"/>
+        </radialGradient>
+        <radialGradient id="radial-gradient-3" cx="10.98" cy="109.84" r="23.66" xlink:href="#radial-gradient"/>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="portrait">
+            <g id="Water">
+                <line class="cls-1" x1="84.25" y1="51.31" x2="24.72" y2="19.6"/>
+                <line class="cls-1" x1="24.72" y1="109.58" x2="84.25" y2="77.87"/>
+                <circle class="cls-2" cx="14.75" cy="14.75" r="14.75"/>
+                <circle class="cls-3" cx="120.25" cy="64.75" r="34"/>
+                <g id="Submit">
+                    <text class="cls-4" transform="translate(111.98 69.42)">O</text>
+                </g>
+                <g id="Submit-2" data-name="Submit">
+                    <text class="cls-4" transform="translate(8.29 19.42)">H</text>
+                </g>
+                <circle class="cls-5" cx="14.75" cy="114.58" r="14.75"/>
+                <g id="Submit-3" data-name="Submit">
+                    <text class="cls-4" transform="translate(8.29 119.25)">H</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,7 +9,7 @@ const g_tour_steps = [
     },
     {
         sourceElmIdQS: "#btn_reset",
-        informationText: `Reset - Reset the exercise by randomizing the given compound.`,
+        informationText: `Reset - Reset the exercise by randomising the given compound.`,
     },
     {
         sourceElmIdQS: "#btn_themes",
