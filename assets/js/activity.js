@@ -17,7 +17,7 @@ var ActivityMain = (function () {
         OnOrientationChange: function () {
             this.ResetPositions();
         },
-        ResetPositions: function(){
+        ResetPositions: function () {
             $(".compound[dropped-cmp]").each(function () {
                 var droppedItem = $(this).attr("dropped-cmp");
                 var gradItem = $(".formula[compound='" + droppedItem + "']");
@@ -27,9 +27,13 @@ var ActivityMain = (function () {
         BindDraggables: function () {
             //Bind Draggable
             $(".formula").draggable({
-                containment:"#split-main",
-                container: "#split-main",
-                //revert: "invalid",
+                //containment:".exp_body_content",
+                container: ".exp_body_content",
+                //scroll: true,
+                //scrollSensitivity: 100,
+                scrollSpeed: 10,
+                //refreshPositions: true,
+                tolerance: "pointer",
                 revert: function (event, ui) {
                     $(this).data("uiDraggable").originalPosition = {
                         top: 0,
@@ -46,8 +50,21 @@ var ActivityMain = (function () {
                     $(".zoom1").removeAttr("pz-scale")
                     var cmpnd = $(this).attr("compound");
                     $(".compound.ui-droppable[dropped-cmp='" + cmpnd + "']").removeAttr("dropped-cmp")
+                    $(this).draggable('instance').offset.click = {
+                        left: Math.floor(ui.helper.width() / 2),
+                        top: Math.floor(ui.helper.height() / 2)
+                    };
+
+                    /*var minusTop = (ui.helper.closest(".formulaplaceholder")[0].getBoundingClientRect().top - document.querySelector(".exp_body_content").getBoundingClientRect().top) - ui.helper.height();
+                    var plusTop = ((($(".formulaWrapper").position().top + $(".formulaWrapper").height()) - ui.helper.closest(".formulaplaceholder").position().top) - ui.helper.height()) - 10
+
+                    ui.helper.attr("minusTop", minusTop);
+                    ui.helper.attr("plusTop", plusTop);
+                    */
+
                 },
                 drag: function (event, ui) {
+                    //console.log(ui.position.top);
                     var scaleval = $(".zoom1").attr("pz-scale")
                     if (scaleval != undefined && scaleval != "") {
                         scaleval = Number(scaleval);
@@ -55,8 +72,35 @@ var ActivityMain = (function () {
                     else {
                         scaleval = 1;
                     }
-                    ui.position.top = ui.position.top / scaleval;
-                    ui.position.left = ui.position.left / scaleval;
+                    var minusTop = (ui.helper.closest(".formulaplaceholder")[0].getBoundingClientRect().top - document.querySelector(".exp_body_content").getBoundingClientRect().top) - ui.helper.height();
+                    var plusTop = ((($(".formulaWrapper").position().top + $(".formulaWrapper").height()) - ui.helper.closest(".formulaplaceholder").position().top) - ui.helper.height()) - 10
+                    //var minusTop = Number(ui.helper.attr("minusTop"));
+                    //var plusTop = Number(ui.helper.attr("plusTop"));
+                    //var scrollFact = document.querySelector(".exp_body_content").scrollHeight - document.querySelector("#split-main").clientHeight;
+                    //minusTop = minusTop + scrollFact;
+                    console.log("UI Top: " +  ui.position.top + " ,PlusTop: " + plusTop + " ,minusTop: " + minusTop)
+                    if (ui.position.top > plusTop) {
+                        ui.position.top = plusTop / scaleval;
+                    }
+                    else if (ui.position.top < ((-1) * minusTop)) {
+                        ui.position.top = ((-1) * minusTop) / scaleval;
+                        console.log(((-1) * minusTop) / scaleval);
+                    }
+                    else {
+                        ui.position.top = ui.position.top / scaleval;
+                    }
+
+                    var minusLeft = ui.helper.closest(".formulaplaceholder").position().left- 20;
+                    var plusLeft = ($(".wrapper").width() - ui.helper.closest(".formulaplaceholder").position().left) - (ui.helper.width() + 40);
+                    if (ui.position.left > plusLeft) {
+                        ui.position.left = plusLeft / scaleval;
+                    }
+                    else if (ui.position.left < ((-1) * minusLeft)) {
+                        ui.position.left = ((-1) * minusLeft) / scaleval;
+                    }
+                    else {
+                        ui.position.left = ui.position.left / scaleval;
+                    }
                 }
             }).each(function () {
                 /*var top = $(this).position().top;

@@ -86,12 +86,14 @@
     /*border: 1px solid #000;*/
     float: left;
     margin: 5px;
+    position: relative;
 }
 
 .formulaWrapper .formula {
     width: 80px;
     height: 36px;
-    float: left;
+    /*float: left;*/
+    position: absolute;
     border: 1px solid #00579b;
     background-color: #FFF;
     border-radius: 5px;

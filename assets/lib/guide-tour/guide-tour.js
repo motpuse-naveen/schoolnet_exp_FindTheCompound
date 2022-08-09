@@ -53,7 +53,7 @@ var GuidedTour = (function () {
             else if (horSide == "left") {
                 if ((myposition.left - 250) < 0) {
                     var marleft = myposition.left + (250 - myposition.left) + 10
-                    $(".gt-instr-box").css({ "left": + marleft + "px" })
+                    $(".gt-instr-box").css({ "left": + marleft + "px", "top": myposition.top })
                 }
                 else {
                     $(".gt-instr-box").css({ "left": myposition.left + 30, "top": myposition.top });
